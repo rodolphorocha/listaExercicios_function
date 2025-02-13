@@ -5,8 +5,21 @@
     */
 
     //Entrada
+    function fatorial(valor) {
+        if (valor < 0) {
+            return "Não existe fatorial de número negativo.";
+}
+    
+    let resultado = 1;
+        for (let i = 1; i <= valor; i++) {
+            resultado *= i;
+        }
+        return resultado;
+    }    
 
+    let numero = Number(prompt("Informe um número inteiro:"));
 
+    alert(`O fatorial de ${numero} é ${fatorial(numero)}`);
     //Processamento
 
 

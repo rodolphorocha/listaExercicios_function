@@ -7,8 +7,20 @@
     */
 
     //Entrada
+    function contarVogais(texto) {
+        let vogais = ["a", "e", "i", "o", "u"];
+        let contador = 0;
 
+        for (let letra of texto.toLowerCase()) {
+            if (vogais.includes(letra)) {
+                contador++;
+            }
+        }
+        return contador;
+    }
 
+    let texto = prompt(`Digite um texto:`)
+    alert(`Na palavra ${texto} há ${contarVogais(texto)} vogais.`)
     //Processamento
 
 
